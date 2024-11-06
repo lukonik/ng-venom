@@ -22,6 +22,13 @@ export const routes: Routes = [
             (b) => b.ButtonPageComponent
           ),
       },
+      {
+        path: 'modify',
+        loadComponent: () =>
+          import('./pages/modify-page/modify-page.component').then(
+            (m) => m.ModifyPageComponent
+          ),
+      },
     ],
   },
   {

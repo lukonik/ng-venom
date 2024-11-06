@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import 'highlight.js/styles/github.css';
 
 html,body{
   margin: 0;

@@ -1,0 +1,4 @@
+<h4>Source Code</h4>
+<button (click)="download()">Download as zip</button>
+<button [cdkCopyToClipboard]="code()">Copy</button>
+<app-code [language]="language()" [code]="code()"></app-code>

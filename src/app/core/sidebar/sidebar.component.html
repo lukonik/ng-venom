@@ -1,13 +1,16 @@
 <div class="w-60">
   <nav>
     <ul class="list-none pl-0">
-      <li class="mb-1">
-        <a
-          class="h-8  pr-3 no-underline hover:no-underline focus:no-underline text-inherit inline-block border-0 border-b border-solid border-b-primary"
-          [routerLink]="'/docs/button'"
-          >Button</a
-        >
-      </li>
+      @for (group of routes(); track $index) {
+      <h4>{{ group.name }}</h4>
+      @for (link of group.links; track $index) {
+      <a
+        class="h-8 pr-3 no-underline block hover:no-underline focus:no-underline text-inherit border-0 border-b border-solid border-b-primary"
+        [routerLink]="link.path"
+        >{{ link.name }}</a
+      >
+      } }
+      <li class="mb-1"></li>
       <li>
         <a [routerLink]="[]">Select</a>
       </li>
