@@ -5,6 +5,7 @@ import { DocDescriptionComponent } from '../../core/doc/doc-description/doc-desc
 import { DocSourceComponent } from '../../core/doc/doc-source/doc-source.component';
 import { DocExampleComponent } from '../../core/doc/doc-example/doc-example.component';
 import { DocDependencyInstallComponent } from '../../core/doc/doc-dependency-install/doc-dependency-install.component';
+import { DocPageComponent } from '../../core/doc/doc-page/doc-page.component';
 @Component({
   selector: 'app-modify-page',
   standalone: true,
@@ -15,6 +16,7 @@ import { DocDependencyInstallComponent } from '../../core/doc/doc-dependency-ins
     DocSourceComponent,
     DocExampleComponent,
     DocDependencyInstallComponent,
+    DocPageComponent,
   ],
   templateUrl: './modify-page.component.html',
   styleUrl: './modify-page.component.scss',
