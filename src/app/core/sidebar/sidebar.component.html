@@ -2,18 +2,18 @@
   <nav>
     <ul class="list-none pl-0">
       @for (group of routes(); track $index) {
-      <h4>{{ group.name }}</h4>
+      <p class="group-name">{{ group.name }}</p>
       @for (link of group.links; track $index) {
-      <a
-        class="h-8 pr-3 no-underline block hover:no-underline focus:no-underline text-inherit border-0 border-b border-solid border-b-primary"
-        [routerLink]="link.path"
-        >{{ link.name }}</a
-      >
-      } }
-      <li class="mb-1"></li>
-      <li>
-        <a [routerLink]="[]">Select</a>
+      <li class="sidebar-link-item">
+        <a
+          class="sidebar-link"
+          routerLinkActive="active-sidebar-link"
+          [routerLink]="link.path"
+          >{{ link.name }}</a
+        >
       </li>
+
+      } }
     </ul>
   </nav>
 </div>

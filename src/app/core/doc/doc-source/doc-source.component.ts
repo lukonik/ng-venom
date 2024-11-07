@@ -3,11 +3,12 @@ import { CodeComponent } from '../../code/code.component';
 import { HttpClient } from '@angular/common/http';
 import { FileService } from '../../../services/file.service';
 import { ClipboardModule } from '@angular/cdk/clipboard';
+import { UiButtonComponent } from '../../ui/ui-button/ui-button.component';
 
 @Component({
   selector: 'app-doc-source',
   standalone: true,
-  imports: [CodeComponent, ClipboardModule],
+  imports: [CodeComponent, ClipboardModule,UiButtonComponent],
   templateUrl: './doc-source.component.html',
   styleUrl: './doc-source.component.scss',
 })

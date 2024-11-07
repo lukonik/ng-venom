@@ -1,0 +1,16 @@
+.sidebar-link{
+  @apply capitalize block font-medium no-underline text-black;
+}
+
+.active-sidebar-link{
+  @apply text-primary;
+}
+
+.sidebar-link-item{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.group-name{
+  @apply font-bold mb-1;
+}

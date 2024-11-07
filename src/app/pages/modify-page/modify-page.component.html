@@ -4,7 +4,11 @@
     label="Modify is a function that changes signal state mutability"
   ></app-doc-sub-header>
   <app-doc-description>
-    This is the ebst documentation ever
+    This `modify` function takes a writable signal and a modifier function as
+    arguments. It uses Immer's `produce` function to create an immutable copy of
+    the signal's current value, applies the modifier to it, and then updates the
+    signal with the modified result. This allows for modifying the state of the
+    signal in an immutable way.
   </app-doc-description>
   <app-doc-dependency-install packageNames="immer">
     In order to use modify utils install

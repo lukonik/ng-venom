@@ -27,6 +27,10 @@ export class SidebarComponent {
           name: 'modify',
           path: './modify',
         },
+        {
+          name: 'button',
+          path: './button',
+        },
       ],
     },
   ]);

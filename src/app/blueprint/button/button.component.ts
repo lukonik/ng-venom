@@ -22,7 +22,7 @@ type BUTTON_VARIANT_TYPES =
   styleUrl: './button.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UIButtonComponent {
+export class NoneButtonComponent {
   variant = input<BUTTON_VARIANT_TYPES>('primary');
 
   disabled = input(undefined, { transform: booleanAttribute });
