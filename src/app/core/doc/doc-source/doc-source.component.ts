@@ -8,7 +8,7 @@ import { UiButtonComponent } from '../../ui/ui-button/ui-button.component';
 @Component({
   selector: 'vn-doc-source',
   standalone: true,
-  imports: [CodeComponent, ClipboardModule,UiButtonComponent],
+  imports: [CodeComponent, ClipboardModule, UiButtonComponent],
   templateUrl: './doc-source.component.html',
   styleUrl: './doc-source.component.scss',
 })
@@ -21,14 +21,9 @@ export class DocSourceComponent {
   name = input.required<string>();
   extension = input.required<string>();
 
-  private getFile() {
-    return this.http.get(`blueprint/${this.path()}`, {
-      responseType: 'text',
-    });
-  }
-
   ngOnInit(): void {
-    const code = this.getFile();
+    const path = `blueprint/${this.path()}`;
+    const code = this.fileService.getFile(path);
 
     code.subscribe((data) => {
       this.code.set(data);

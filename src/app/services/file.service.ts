@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
 import { saveAs } from 'file-saver';
 import JSZip from 'jszip';
 
@@ -11,6 +12,14 @@ interface FileType {
   providedIn: 'root',
 })
 export class FileService {
+  private http = inject(HttpClient);
+
+  getFile(path: string) {
+    return this.http.get(path, {
+      responseType: 'text',
+    });
+  }
+
   downloadFile(zipName: string, file: FileType) {
     const zip = new JSZip();
 

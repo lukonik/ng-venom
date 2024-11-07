@@ -6,6 +6,7 @@ import { DocHeaderComponent } from '../../core/doc/doc-header/doc-header.compone
 import { DocPageComponent } from '../../core/doc/doc-page/doc-page.component';
 import { DocSourceComponent } from '../../core/doc/doc-source/doc-source.component';
 import { DocSubHeaderComponent } from '../../core/doc/doc-sub-header/doc-sub-header.component';
+import { DocComponentSourceComponent } from "../../core/doc/doc-component-source/doc-component-source.component";
 
 @Component({
   selector: 'vn-button-page',
@@ -17,7 +18,8 @@ import { DocSubHeaderComponent } from '../../core/doc/doc-sub-header/doc-sub-hea
     DocSourceComponent,
     DocExampleComponent,
     DocPageComponent,
-  ],
+    DocComponentSourceComponent
+],
   templateUrl: './button-page.component.html',
   styleUrl: './button-page.component.scss',
 })
