@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { SidebarComponent } from '../../core/sidebar/sidebar.component';
 
 @Component({
-  selector: 'app-container-page',
+  selector: 'vn-container-page',
   standalone: true,
   imports: [RouterOutlet, SidebarComponent],
   templateUrl: './container-page.component.html',

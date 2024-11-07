@@ -7,7 +7,7 @@ import { DocExampleComponent } from '../../core/doc/doc-example/doc-example.comp
 import { DocDependencyInstallComponent } from '../../core/doc/doc-dependency-install/doc-dependency-install.component';
 import { DocPageComponent } from '../../core/doc/doc-page/doc-page.component';
 @Component({
-  selector: 'app-modify-page',
+  selector: 'vn-modify-page',
   standalone: true,
   imports: [
     DocHeaderComponent,

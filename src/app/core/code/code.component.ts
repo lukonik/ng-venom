@@ -2,7 +2,7 @@ import { Component, input } from '@angular/core';
 import { Highlight } from 'ngx-highlightjs';
 
 @Component({
-  selector: 'app-code',
+  selector: 'vn-code',
   standalone: true,
   imports: [Highlight],
   templateUrl: './code.component.html',

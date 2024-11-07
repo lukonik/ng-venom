@@ -1,7 +1,7 @@
 import { Component, input } from '@angular/core';
 
 @Component({
-  selector: 'app-doc-header',
+  selector: 'vn-doc-header',
   standalone: true,
   imports: [],
   templateUrl: './doc-header.component.html',

@@ -11,7 +11,7 @@ interface Link {
   path: string;
 }
 @Component({
-  selector: 'app-sidebar',
+  selector: 'vn-sidebar',
   standalone: true,
   imports: [RouterLink, RouterLinkActive],
   templateUrl: './sidebar.component.html',

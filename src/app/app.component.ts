@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './core/header/header.component';
 import { produce, setAutoFreeze } from 'immer';
 @Component({
-  selector: 'app-root',
+  selector: 'vn-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',

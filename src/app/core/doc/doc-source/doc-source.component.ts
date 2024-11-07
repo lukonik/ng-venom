@@ -6,7 +6,7 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 import { UiButtonComponent } from '../../ui/ui-button/ui-button.component';
 
 @Component({
-  selector: 'app-doc-source',
+  selector: 'vn-doc-source',
   standalone: true,
   imports: [CodeComponent, ClipboardModule,UiButtonComponent],
   templateUrl: './doc-source.component.html',

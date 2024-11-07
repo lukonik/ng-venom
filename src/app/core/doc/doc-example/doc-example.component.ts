@@ -3,7 +3,7 @@ import { CodeComponent } from '../../code/code.component';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-doc-example',
+  selector: 'vn-doc-example',
   standalone: true,
   imports: [CodeComponent],
   templateUrl: './doc-example.component.html',

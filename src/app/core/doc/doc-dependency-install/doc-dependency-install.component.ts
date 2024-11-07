@@ -2,7 +2,7 @@ import { Component, computed, input } from '@angular/core';
 import { CodeComponent } from '../../code/code.component';
 
 @Component({
-  selector: 'app-doc-dependency-install',
+  selector: 'vn-doc-dependency-install',
   standalone: true,
   imports: [CodeComponent],
   templateUrl: './doc-dependency-install.component.html',

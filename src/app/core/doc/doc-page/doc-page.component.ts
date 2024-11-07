@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-doc-page',
+  selector: 'vn-doc-page',
   standalone: true,
   imports: [],
   templateUrl: './doc-page.component.html',

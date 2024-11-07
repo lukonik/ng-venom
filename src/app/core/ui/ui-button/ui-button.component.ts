@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ui-button',
+  selector: 'vn-ui-button',
   standalone: true,
   imports: [],
   templateUrl: './ui-button.component.html',

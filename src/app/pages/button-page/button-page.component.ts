@@ -8,7 +8,7 @@ import { DocSourceComponent } from '../../core/doc/doc-source/doc-source.compone
 import { DocSubHeaderComponent } from '../../core/doc/doc-sub-header/doc-sub-header.component';
 
 @Component({
-  selector: 'app-button-page',
+  selector: 'vn-button-page',
   standalone: true,
   imports: [
     DocHeaderComponent,
